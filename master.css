@@ -1,0 +1,704 @@
+/**
+*********  PROJECT BASICS  ***********
+**/
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("/fonts/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url('/fonts/RobotoSlab-Bold.ttf');
+}
+
+body {
+  font-family: "Roboto Slab", Times, serif;
+  color: #222222;
+  font-size: 1em;
+}
+
+p, small, a, li {
+  color: #777777;
+}
+
+article {
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/**
+**********  PAGE HEADER   ***********
+**/
+
+.page-header {
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  background-color: #FFFFFF;
+}
+
+.page-navigation-bar {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 28px;
+}
+
+.navigation-toggle {
+  position: absolute;
+  right: 28px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  border: 3px solid #ABABAB;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Montserrat Bold";
+  color: #ABABAB;
+}
+
+.navigation-toggle:hover {
+  border-color: #7CC576;
+  color: #777777;
+}
+
+.navigation-toggle:focus {
+  outline: none;
+}
+
+.company-logo {
+  background-image: url("/img/logo.png");
+  background-repeat: no-repeat;
+}
+
+.company-logo h1 {
+  position: absolute;
+  margin-left: -888888px;
+}
+
+.main-navigation {
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.nav-link {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px;
+  margin-left: 0;
+  background-color: #FFFFFF;
+  font-family: "Montserrat Medium", Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ABABAB;
+  font-size: .875em;
+  transition: all .3s ease-in-out;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.show-link {
+  margin-left: 100%;
+}
+
+.nav-link:hover {
+  border-left: 2px solid #777777;
+  border-right: 2px solid #777777;
+  color: #777777;
+}
+
+/**
+*** ARTICLE ELEMENTS GENERAL STYLES ****
+**/
+
+.article-container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.article-container header {
+  margin-bottom: 45px;
+}
+
+.banner-title {
+  color: #000000;
+  font-size: 1.5em;
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.banner-title-extend {
+  text-align: center;
+  color: #CCCCCC;
+  font-size: .9em;
+  margin: 0;
+}
+
+.cta-btn {
+  display: block;
+  padding: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #FFFFFF;
+  font-family: "Montserrat Medium", Arial, sans-serif;
+  font-weight: bold;
+  font-size: .9em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: #7CC576;
+  border: none;
+  border-radius: 30px;
+  transition: all .2s ease-in-out;
+}
+
+.cta-btn:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.subtitle {
+  color: #000000;
+  font-family: "Montserrat Bold", Arial ,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/**
+******** LANDING BANNER *********
+**/
+
+.landing-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/img/landing-bg.jpg");
+  background-size: cover;
+}
+
+.company-motto {
+  color: #FFFFFF;
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 375px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.landing-banner .banner-title-extend {
+  margin-bottom: 40px;
+}
+
+/**
+******* SERVICES ********
+**/
+
+.services header {
+  margin-bottom: 40px;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel .panel-logo {
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+.panel-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 450px;
+}
+
+.panel-title {
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.125em;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.panel-description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+/**
+****** OFFER DETAILS ********
+**/
+
+.offer-details {
+  background-color: #E9E9E9;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.offer-text-content {
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 20%;
+}
+
+.offer-text-content::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  width: 389px;
+  height: 416px;
+  background-image: url("/img/gear.png");
+  background-repeat: no-repeat;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  background-image: url("/img/offerbg.jpg");
+  padding: 15px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.offer-details .banner-title {
+  color: #FFFFFF;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.offer-details p {
+  color: #CCCCCC;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+
+.offer-list li {
+  color: #CCCCCC;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  padding-left: 39px;
+  position: relative;
+}
+
+.offer-list li::before {
+  font-family: "fontello";
+  content: '\21';
+  width: 32px;
+  height: 32px;
+  border: 1px solid #CCCCCC;
+  border-radius: 50%;
+  padding: 6px;
+  margin-left: -39px;
+  margin-right: 10px;
+}
+
+/**
+********* LATEST PROJECT **********
+**/
+
+.project {
+  background-image: url("/img/ipad.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.details .subtitle {
+  margin-bottom: 15px;
+}
+
+.details-description {
+  font-size: 0.9em;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.details-list {
+  margin-bottom: 20px;
+}
+
+.details-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.details-list-text {
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.details-list-text .subtitle {
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.details-list-text .details-description {
+  margin-bottom: 0;
+}
+
+.project-describe footer {
+  margin-bottom: 80px;
+}
+
+.more-details {
+  font-family: "Montserrat Bold", Arial ,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7CC576;
+  text-decoration: none;
+}
+
+.more-details::after {
+  font-family: "fontello";
+  content: "\2d";
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+
+/**
+******** CULTURE ********
+**/
+
+.culture {
+  background-color: #F9F9F9;
+}
+
+.culture .panel {
+  flex-flow: column;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.culture .panel:last-child {
+  margin-bottom: 0;
+}
+
+.culture .panel::after, .culture .panel::before{
+  content: '';
+  position: absolute;
+  top: 46px;
+  left: 17%;
+  z-index: 10;
+  width: 15%;
+  border-top: 3px solid #898989;
+}
+
+.culture .panel::before {
+  left: auto;
+  right: 17%;
+}
+
+.culture .subtitle {
+  font-size: 1.125em;
+  margin-bottom: 10px;
+}
+
+.culture .description {
+  font-size: 0.9em;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+/**
+********* THUMBNAILS ********
+**/
+
+.thumbnail {
+  padding: 20px;
+  background-color: #F9F9F9;
+  margin-bottom: 22px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.thumbnail:last-child {
+  margin-bottom: 0;
+}
+
+.client-photo {
+  display: block;
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  width: 60px;
+  height: 60px;
+  background-color: #E9E9E9;
+  border-radius: 50%;
+}
+
+.client-recomendation {
+  padding: 0;
+  margin: 0;
+}
+
+.client-recomendation span {
+  display: block;
+  margin-left: 100px;
+  margin-top: 10px;
+  color: #7CC576;
+}
+
+/**
+********* CONTACT ********
+**/
+
+.contact {
+  background-color: #7CC576;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contact .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact .banner-title {
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+
+/**
+********* PARTNERS *********
+**/
+
+.partners {
+  box-sizing: border-box;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.partners ul {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.partners ul li {
+  margin-bottom: 15px;
+}
+
+.partners li:last-child {
+  margin-bottom: 0;
+}
+
+/**
+******** GENERAL FOOTER STYLES **********
+**/
+
+.additional-links {
+  background-color: #222222;
+}
+
+.footer-lists-container {
+  padding: 15px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.links-list {
+  margin-bottom: 35px;
+}
+
+.links-list:last-child {
+  margin-bottom: 0;
+}
+
+.links-list li {
+  margin-bottom: 10px;
+  margin-left: 38px;
+}
+
+.links-list li:first-child {
+  margin-left: 0px;
+}
+
+.list-title, .contact-info, .post-link,
+.tweet, .tweet p {
+  color: #FFFFFF;
+  line-height: 1.6em;
+  text-decoration: none;
+  margin: 0;
+}
+
+.tweet-tag {
+  font-family: "Roboto Slab Bold", Times, serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.list-title {
+  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  margin-bottom: 22px;
+}
+
+.tweet-tags {
+  display: block;
+}
+
+/**
+******** FOOTER ICONS *********
+**/
+
+.contact-info::before, .post-link::before, .tweet::before {
+  display: block;
+  float: left;
+  width: 30px;
+  text-align: center;
+  font-family: "fontello";
+  content: '\23';
+  font-size: 1.3em;
+  margin-left: -40px;
+}
+
+.links-list li:nth-child(3) .contact-info::before {
+  content: '\22';
+}
+
+.links-list li:nth-child(4) .contact-info::before {
+  content: '\5d';
+}
+
+.post-link::before {
+  content: '\24';
+}
+
+.links-list li:nth-child(3) .post-link::before {
+  content: '\25';
+}
+
+.links-list li:nth-child(6) .post-link::before {
+  content: '\26';
+}
+
+.tweet::before {
+  content: '\e800';
+}
+
+
+/**
+********** COPYRIGHT AND SOCIALS *********
+**/
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-flow: column-reverse;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.copy {
+  font-family: "Montserrat Regular", Arial, sans-serif;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.social-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background-color: #333333;
+  border-radius: 50%;
+  font-size: 1.15em;
+  color: #FFFFFF;
+  margin-right: 10px;
+  transition: all .2s ease-out;
+}
+
+.icon-twitter-circled {
+  background-color: transparent;
+  color: #333333;
+  font-size: 41px;
+}
+
+.icon-twitter-circled:hover {
+  color: #1DA1F3;
+}
+
+.icon-facebook:hover {
+  background-color: #2E4DA7;
+}
+
+.icon-pinterest:hover {
+  background-color: #CB2026;
+}
+
+.icon-gplus:hover {
+  background-color: #D6492F;
+}
