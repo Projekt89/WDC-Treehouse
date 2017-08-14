@@ -4,27 +4,27 @@
 
 @font-face {
   font-family: "Montserrat Bold";
-  src: url("/fonts/Montserrat-Bold.ttf");
+  src: url("fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
   font-family: "Montserrat Regular";
-  src: url("/fonts/Montserrat-Regular.ttf");
+  src: url("fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
   font-family: "Montserrat Medium";
-  src: url("/fonts/Montserrat-Medium.ttf");
+  src: url("fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("/fonts/RobotoSlab-Regular.ttf");
+  src: url("fonts/RobotoSlab-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Slab Bold";
-  src: url('/fonts/RobotoSlab-Bold.ttf');
+  src: url('fonts/RobotoSlab-Bold.ttf');
 }
 
 body {
@@ -92,7 +92,7 @@ ul {
 }
 
 .company-logo {
-  background-image: url("/img/logo.png");
+  background-image: url("img/logo.png");
   background-repeat: no-repeat;
 }
 
@@ -206,7 +206,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/img/landing-bg.jpg");
+  background-image: url("img/landing-bg.jpg");
   background-size: cover;
 }
 
@@ -289,7 +289,7 @@ ul {
   transform: translate(-50%, -50%);
   width: 389px;
   height: 416px;
-  background-image: url("/img/gear.png");
+  background-image: url("img/gear.png");
   background-repeat: no-repeat;
 }
 
@@ -299,7 +299,7 @@ ul {
   align-items: flex-start;
   position: relative;
   z-index: 2;
-  background-image: url("/img/offerbg.jpg");
+  background-image: url("img/offerbg.jpg");
   padding: 15px;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -342,7 +342,7 @@ ul {
 **/
 
 .project {
-  background-image: url("/img/ipad.png");
+  background-image: url("img/ipad.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 250px;

@@ -59,22 +59,3 @@ function menuToggle(){
 
 var hamburger = document.getElementById('navigation-toggle');
 hamburger.addEventListener('click', menuToggle );
-
-
-/**
-*********** MENU ITEM SLIDE TO SECTION ********
-**/
-
-var menuLink = document.querySelectorAll('.nav-link');
-
-menuLink.prototype.
-console.log(menuLink);
-
-/*menuLink.addEventLgistener('click', function(e){
-  alert(e.target.value);
-
-   var elementsY = document.getElementById('services').offsetTop;
-   var navbarHeight = document.getElementById('navigationBar').offsetHeight;
-   var scrollAmount = elementsY - navbarHeight;
-   setTimeout(function() {window.scrollTo(0, scrollAmount);},1)
-});*/
